@@ -1,8 +1,9 @@
-{
-  "name": "myapp",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  }
-}
+const http = require("http");
+
+const server = http.createServer((req, res) => {
+  res.end("Hello from Kishore's server 🚀");
+});
+
+server.listen(3000, () => {
+  console.log("Server running on port 3000");
+});
